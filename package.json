@@ -1,0 +1,24 @@
+{
+  "name": "t-motion-detector-speech",
+  "version": "0.1.0",
+  "description": "A library to detect motion, using cylon as a base for Notifying, inheriting the BaseNotifier Entity",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcardoso2/t-motion-detector-speech.git"
+  },
+  "keywords": [
+    "motion",
+    "speech",
+    "cylon"
+  ],
+  "author": "Tiago Cardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcardoso2/t-motion-detector-speech/issues"
+  },
+  "homepage": "https://github.com/tcardoso2/t-motion-detector-speech#readme"
+}
