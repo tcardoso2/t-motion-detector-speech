@@ -1,3 +1,4 @@
+//Do I need the events library? Seems not
 var events = require("events");
 var md = require('t-motion-detector');
 var Cylon = require("cylon");
@@ -23,17 +24,20 @@ var voice = Cylon.robot({
 });
 
 //A Speech Notifier object for sending notifications, which speaks also the message being sent
-function SpeechNotifier(){
+class SpeechNotifier extends md.Entities.BaseNotifier{
 
-  this.name = "Default Base Notifier";
-
+  constructor()
+  {
+    super();
+    this.name = "Default Base Notifier";
+  }
   //events.EventEmitter.call(this);
 
-  this.Notify = function(text){
+  notify(text){
     voice.message = text;
     voice.start();
     this.emit('pushedNotification', this.name, text);
   }
 }
-SpeechNotifier.prototype.__proto__ = md.BaseNotifier.prototype;
+SpeechNotifier.prototype.__proto__ = md.Entities.BaseNotifier.prototype;
 exports.SpeechNotifier = SpeechNotifier;

@@ -1,6 +1,6 @@
 {
   "name": "t-motion-detector-speech",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A library to detect motion, using cylon as a base for Notifying, inheriting the BaseNotifier Entity",
   "main": "main.js",
   "scripts": {
